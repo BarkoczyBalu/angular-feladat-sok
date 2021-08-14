@@ -1,0 +1,5 @@
+<form [formGroup]="formModel">
+  <input type="text" formControlName="username"> <br>
+  <input type="password" formControlName="password"> <br>
+  <button [disabled]="!formModel.valid">Küld</button>
+</form>
